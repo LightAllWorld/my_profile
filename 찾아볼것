@@ -1,0 +1,10 @@
+
+-webkit-background-size:cover;
+-moz-background-size:cover;
+-o-background-size:cover;
+
+이 무엇인지
+
+rgba((3개의 색조합),투명도);
+
+

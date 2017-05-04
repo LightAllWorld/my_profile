@@ -1,0 +1,185 @@
+.headP {
+position:static;
+width:77%;
+top:50px;
+margin: 0% 10% 2% 12%;
+display:inline-block;
+font-size: 60px;
+font-family: 'Noto Sans',sans-serif;
+background-color:rgba(255,255,255,0.8);
+padding:3% 0% 0% 1%;
+z-index:1;
+}
+
+.subhead {
+font-size:16px;	
+}
+
+body
+{
+background-image:url('photo/background_image.jpg');
+background-size:cover;
+background-repeat:no-repeat;
+background-position:center;
+background-attachment:fixed;
+}
+
+.menu {
+margin-left:12%;
+margin-right:10%;
+background-color:rgba(255,255,255,0.8);
+margin-bottom:2%;
+
+}
+
+a img {
+width:150px;
+height:150px;
+}
+
+.posting {
+padding-top:1%;
+padding-bottom:1%;
+margin-left:12%;
+margin-right:10%;
+background-color:rgba(255,255,255,0.8);
+text-align:center;
+font-family: 'Merriweather', serif;
+}
+
+.profile {
+z-index:2;
+float :right;
+position:relative;
+right:11%;
+top:-190px;
+display:inline-block;
+}
+
+.photo {
+max-width:150px;
+max-height:150px;
+border-radius:50%;
+}
+
+ul {
+list-style-type:none;
+padding:0;
+overflow:hidden;
+}
+
+li {
+display:inline;
+}
+
+li details {
+display:inline-block;
+float:left;
+color:black;
+text-align:center;
+padding: 14px 16px;
+text-decoration:none;
+font-family:'Muli',sans-serif;
+}
+
+.right_float{
+float:right;
+text-align:center;
+padding: 14px 16px;
+}
+
+details :hover {
+color:brown;
+}
+
+details a {
+text-decoration:none;
+display:block;
+color:black;
+}
+
+.nav {
+margin-top:1%;
+text-align:center;
+}
+.pre {
+display:inline-block;
+text-decoration:none;
+color:black;
+text-align:center;
+padding:5px 5px;
+margin-left:1%;
+margin-bottom:3%;
+}
+
+.next {
+display:inline-block;
+text-decoration:none;
+color:black;
+text-align:center;
+padding:5px 5px;
+margin-right:1%;
+margin-bottom:3%;
+}
+
+.pre:hover{
+color:#A9A9A9;
+}
+.next:hover{
+color:#A9A9A9;
+}
+
+.comment_input {
+margin: 2% 10% 2% 12%;
+background-color:rgba(255,255,255,0.8);
+border:2px none #000;
+border-top:solid #A9A9A9;
+}
+
+form {
+padding:2%;
+font-family:'Muli',sans-serif;
+font-size:16px;
+
+}
+
+.name {
+border:2px solid #ccc;
+border-radius:5px;
+padding:5px;
+}
+
+.E-mail {
+border:2px solid #ccc;
+border-radius:5px;
+padding:5px;
+}
+.comment {
+padding:5px;
+height:150px;
+width:70%;
+box-sizing:border-box;
+border:2px solid #ccc;
+border-radius:5px;
+resize:none;
+}
+
+.commend_list {
+padding:1%;
+font-family: 'Roboto', sans-serif;
+margin: 2% 10% 2% 12%;
+background-color:rgba(255,255,255,0.8);
+border:2px none #000;
+border-top:solid #A9A9A9;
+}
+.post_selfi {
+max-width:50%;
+max-height:50%;
+border-radius:10%;
+}
+.post_img {
+max-width:30%;
+max-height:30%;
+border-radius:5%;
+padding-right:2%;
+}
