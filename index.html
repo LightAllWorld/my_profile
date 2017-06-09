@@ -2,11 +2,14 @@
 <html>
 <head>
 	<title>Project.ver1</title>
+	<meta charset="utf-8">
 	<link href="https://fonts.googleapis.com/css?family=Muli|Noto+Sans:700i" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Noto+Sans:700i" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-2.2.3.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="loginbox.css">
 </head>
 <body>
 	<div class="headP">
@@ -17,56 +20,111 @@
 		</p>
 	</div>
 	<div class="profile">
-		<img class="photo" src="photo/profile.png" title="Myphoto" alt="KimKiHwan">	
+		<img class="photo" src="photo/profile.png" title="Myphoto" alt="KimKiHwan">
 	</div>
 	<div class="menu">
 		<ul>
 			<li>
-			<details>
-				<summary>Travel</summary>
-			<a href="#Korea">Korea</a>
-			<a href="#Forign">Forign</a>
-			</details>
+				<details>
+					<summary  id = "menu_Travel">Travel</summary>
+					<a href="#Korea" id = "tr1" class="me_tr">Korea</a><br>
+					<a href="#Forign" id="tr2" class="me_tr">Forign</a>
+				</details>
 			</li>
 			<li>
-			<details>
-				<summary>Scurity</summary>
-				<a href="#Network">Network</a>
-				<a href="#Analysis">Analysis</a>
-				<a href="#Aplication">Aplication</a>
-			</details>
+				<details >
+					<summary id = "menu_Security">Scurity</summary>
+					<a href="#Network" id="se1" class="me_se">Network</a><br>
+					<a href="#Analysis" id="se2" class="me_se">Analysis</a><br>
+					<a href="#Aplication" id="se3" class="me_se">Aplication</a>
+				</details>
 			</li>
 			<li>
 				<details>
-					<summary>Food</summary>
-					<a href="#Japanse">Japanese</a>
-					<a href="#Korean">Korean</a>
-					<a href="#Chinese">Chinese</a>
+					<summary id = "menu_Food">Food</summary>
+					<a href="#Japanse" id="fo1" class="me_fo">Japanese</a><br>
+					<a href="#Korean" id="fo2" class="me_fo">Korean</a><br>
+					<a href="#Chinese" id="fo3" class="me_fo">Chinese</a>
 				</details>
 			</li>
-			<li class="right_float"><a style="text-decoration: none" href="login.html"><strong>Login</strong></a></li>
+			<li class="right_float">
+				<a href="#login-box" id="login" class="login-window"><strong>Login</strong></a>
+				<div id="login-box" class="login-popup">
+					<a href="#" class="close"><img src="photo/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+				  <form method="post" class="signin" action="#">
+		        <fieldset class="textbox">
+		        <label class="username">
+		        <span>Username or email</span>
+		        <input id="username" name="username" value="" type="text" autocomplete="on" placeholder="Username">
+		        </label>
+		        <label class="password">
+		        	<span>Password</span>
+		        <input id="password" name="password" value="" type="password" placeholder="Password">
+		        </label>
+		        <button class="submit button" type="button">Sign in</button>
+		        <p>
+		        <a class="forgot" href="#">Forgot your password?</a>
+		        </p>
+	        </fieldset>
+	  </form>
+	</div>
+			</li>
 		</ul>
 	</div>
 	<div class="posting">
-	<img src="photo/selfi.jpg" class="post_selfi" title="It's me!" alt="KiHwan"><br><br>
-	 I am here to find pleasure and introduce things I would like to do in the future.<br><br>
-	 <img src="photo/security_divide.png" class="post_img" title="Security" alt="Information Scurity_Image">
-	 <img src="photo/food_divide.jpg" class="post_img" title="Food" alt="Food_Image">
-	 <img src="photo/travel1.jpg" class="post_img" title="Travel" alt="Travel_Image"><br><br>
-	 My interests can be divided into information security, food, and travel.<br><br>
-	 <img src="photo/security2.jpg" class="post_img" title="Security" alt="SecurityImage"><br><br>
-First, an information security expert is my dream, and I want to do malicious code analysis among security areas.<br><br>
-	<img src="photo/food2.jpg" class="post_img" title="Food" alt="Food_Image"><br><br>
-	Second, I like to eat delicious food, so I want to eat a variety of foods.<br><br>
-	<img src="photo/sevilla.png" class="post_img" title="Travel" alt="Sevilla Image"><br><br>
-	Finally, I like to experience new and different experiences through travel.,<br><br>
-	So, from now on I will introduce each of these bucket lists!
+		<img src="photo/selfi.jpg" class="post_selfi" title="It's me!" alt="KiHwan"><br><br>
+		 I am here to find pleasure and introduce things I would like to do in the future.<br><br>
+
+		 <div class="Photo_slide">
+		 	 	<img src="photo/security_divide.png" class="slide_img" title="Security" alt="Information Scurity_Image">
+				<img src="photo/food_divide.jpg" class="slide_img" title="Food" alt="Food_Image">
+				<img src="photo/travel1.jpg" class="slide_img" title="Travel" alt="Travel_Image">
+
+				<a class="photo-btn" style="left:0" onclick="plusDivs(-1)">&#10094;</a>
+				<a class="photo-btn" style="right:0" onclick="plusDivs(1)">&#10095;</a>
+		 </div>
+		 My interests can be divided into information security, food, and travel.<br><br>
+
+
+		 <div class="security_slide">
+			 <img src="photo/security1.jpg" class="security_img" title="Security1" alt="SecurityImage1">
+			 <img src="photo/security2.jpg" class="security_img" title="Security2" alt="SecurityImage2">
+			 <img src="photo/security3.jpg" class="security_img" title="Security3" alt="SecurityImage3">
+
+			 <a class="photo-btn" style="left:0" onclick="plusSecurity(-1)">&#10094;</a>
+			 <a class="photo-btn" style="right:0" onclick="plusSecurity(1)">&#10095;</a>
+	 </div><br>
+	First, an information security expert is my dream, and I want to do malicious code analysis among security areas.<br><br>
+
+
+	<div class="food_slide">
+		<img src="photo/food1.jpg" class="food_img" title="Food1" alt="Food_Image1">
+		<img src="photo/food2.jpg" class="food_img" title="Food2" alt="Food_Image2">
+		<img src="photo/food3.jpg" class="food_img" title="Food3" alt="Food_Image3">
+
+		<a class="photo-btn" style="left:0" onclick="plusFood(-1)">&#10094;</a>
+		<a class="photo-btn" style="right:0" onclick="plusFood(1)">&#10095;</a>
+	</div><br>
+		Second, I like to eat delicious food, so I want to eat a variety of foods.<br><br>
+
+
+		<div class="travel_slide">
+
+		<img src="photo/sevilla.png" class="travel_img" title="Travel1" alt="TravelImage1">
+		<img src="photo/travel2.jpg" class="travel_img" title="Travel2" alt="TravelImage2">
+		<img src="photo/travel3.jpg" class="travel_img" title="Travel3" alt="TravelImage3">
+
+		<a class="photo-btn" style="left:0" onclick="plusTravel(-1)">&#10094;</a>
+		<a class="photo-btn" style="right:0" onclick="plusTravel(1)">&#10095;</a>
+	</div>
+		Finally, I like to experience new and different experiences through travel.,<br><br>
+		So, from now on I will introduce each of these bucket lists!
 	</div>
 	<div class="commend_list">
 		HJKim(cuty****) 2017. 5. 4. pm. 09:56<br><br>
 		So Nice Bucket List!!<br>
 		<details>
-			<summary>reply</summary>
+			<summary id="reply1" class="reply">reply</summary>
 			<form>
 				<strong>Comment</strong><br><br>
 				<strong>Name</strong><br><input type="name" name="UserName" placeholder="Your Name" class="name"><br><br>
@@ -81,7 +139,7 @@ First, an information security expert is my dream, and I want to do malicious co
 		JMKim(jung******) 2017. 5. 4. pm 10:25<br><br>
 		Wow! It`s interesting!<br>
 		<details>
-			<summary>reply</summary>
+			<summary id="reply2" class="reply">reply</summary>
 			<form>
 				<strong>Comment</strong><br><br>
 				<strong>Name</strong><br><input type="name" name="UserName" placeholder="Your Name" class="name"><br><br>
@@ -93,19 +151,18 @@ First, an information security expert is my dream, and I want to do malicious co
 		</details>
 	</div>
 	<div class="comment_input">
-
 	<form>
 		<strong>Comment</strong><br><br>
 		<strong>Name</strong><br><input type="name" name="UserName" placeholder="Your Name" class="name"><br><br>
 		<strong>E-mail</strong><br><input type="E-mail" name="UserEmail" placeholder="Your E-mail" class="E-mail"><br><br>
 		<strong>Text</strong><br><textarea class="comment" placeholder="Comment"></textarea><br><br>
-		<strong>If you want alarm when the comment is on, checked box</strong><input type="checkbox" name="alarm">
+		<strong>If you want alarm when the comment is on, checked box</strong><input type="checkbox" name="alarm"><br>
+		<strong>비밀글</strong><input type="checkbox" name="hidden">
 		<br><br><button type="submit">Submit</button>
 	</form>
 	</div>
-	<div class="nav">
-		<a href="#next" class="next"> &larr; next </a>
-		<a href="#pre" class="pre"> pre &rarr;</a> 	
-	</div>
+	<script type="text/javascript" src="menu_event.js"></script>
+	<script type="text/javascript" src="loginbox.js"></script>
+	<script type="text/javascript" src="slide.js"></script>
 </body>
 </html>

@@ -12,7 +12,7 @@ z-index:1;
 }
 
 .subhead {
-font-size:16px;	
+font-size:16px;
 }
 
 body
@@ -27,9 +27,8 @@ background-attachment:fixed;
 .menu {
 margin-left:12%;
 margin-right:10%;
-background-color:rgba(255,255,255,0.8);
+background-color:	#A9A9A9;
 margin-bottom:2%;
-
 }
 
 a img {
@@ -88,10 +87,6 @@ text-align:center;
 padding: 14px 16px;
 }
 
-details :hover {
-color:brown;
-}
-
 details a {
 text-decoration:none;
 display:block;
@@ -101,32 +96,6 @@ color:black;
 .nav {
 margin-top:1%;
 text-align:center;
-}
-.pre {
-display:inline-block;
-text-decoration:none;
-color:black;
-text-align:center;
-padding:5px 5px;
-margin-left:1%;
-margin-bottom:3%;
-}
-
-.next {
-display:inline-block;
-text-decoration:none;
-color:black;
-text-align:center;
-padding:5px 5px;
-margin-right:1%;
-margin-bottom:3%;
-}
-
-.pre:hover{
-color:#A9A9A9;
-}
-.next:hover{
-color:#A9A9A9;
 }
 
 .comment_input {
@@ -180,6 +149,106 @@ border-radius:10%;
 .post_img {
 max-width:30%;
 max-height:30%;
-border-radius:5%;
+border-radius:10%;
 padding-right:2%;
+}
+
+.me_tr
+{
+  display:none;
+}
+
+#login
+{
+text-decoration: none;
+font-family:'Muli',sans-serif;
+color:black;
+}
+
+.me_se
+{
+  display:none;
+}
+
+.me_fo
+{
+  display:none;
+}
+
+details : hover {
+color:brown;
+}
+
+.slide_img
+{
+  width:420px;
+  height:240px;
+  border-radius:10%;
+}
+
+.security_img
+{
+  width:420px;
+  height:240px;
+  border-radius:10%;
+}
+
+.food_img
+{
+  width:420px;
+  height:240px;
+  border-radius:10%;
+}
+
+.travel_img
+{
+  width:420px;
+  height:240px;
+  border-radius:10%;
+}
+
+.Photo_slide
+{
+  margin-left: 31%;
+  margin-right:10%;
+  width:420px;
+  height:240px;
+  position: relative;
+}
+
+.security_slide
+{
+  margin-left: 31%;
+  margin-right:10%;
+  width:420px;
+  height:240px;
+  position: relative;
+}
+
+.food_slide
+{
+  margin-left: 31%;
+  margin-right:10%;
+  width:420px;
+  height:240px;
+  position: relative;
+}
+
+.travel_slide
+{
+  margin-left: 31%;
+  margin-right:10%;
+  width:420px;
+  height:240px;
+  position: relative;
+}
+
+.photo-btn
+{
+  position : absolute;
+  top : 45%;
+}
+
+.reply {
+margin-right:95%;
 }
